@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+</head>
+    <style type="text/css">
+    
+        #list
+        {
+            background-color: dimgray;
+        }
+    .text
+        {
+            font-family: cursive;
+        }
+        
+    </style>
+    
+
+
+<body>
+  <h1>Hello World</h1>
+   <p><b>Hello World</b></p>
+   
+    <div style="color: red;background-color: aqua;font-size: 140%"> 
+             <p class="text">
+                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+     </div>
+     
+    <div id="list">
+         <ul>
+             <li>Hello World</li>
+             <li>Hello India</li>
+             <li>Hello everyone</li>
+         </ul>
+    
+        <ol>
+            <li>Mobile</li>
+            <li>Clothes</li>
+            <li>Food</li>
+        </ol>    
+    </div>
+     
+      <img src="1.jpg" width="400px">
+    
+          <img src="1.jpg" style="width: 300px;" alt="" />
+   
+        
+        <div style="background-color: orange;height: 300px;">
+            <img src="earth.jpg" alt="" style="height: 300px;align: center">
+            
+
+        </div>
+        <div style="background-color: greenyellow;height: 300px">
+ 
+        </div>
+ 
+        
+      
+</body>
+</html>
