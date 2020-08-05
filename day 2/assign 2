@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+</head>
+    <style type="text/css">
+        #divID
+        {
+            color: red;
+            font-family: cursive;
+        }
+        #spanID
+        {
+            color: green;
+            font-family:sans-serif;
+        }
+    .linear {
+        background: linear-gradient(red, pink, black);
+        height: 500px;
+      }
+        
+        
+    </style>
+<body>
+    
+        <div id="divID">
+           <p>
+                Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like. 
+                <br>
+                <br>
+            <span id="spanID">
+                That know ask case sex ham dear her spot. Weddings followed the all marianne nor whatever settling. Perhaps six prudent several her had offence. Did had way law dinner square tastes. Recommend concealed yet her procuring see consulted depending. Adieus hunted end plenty are his she afraid. Resources agreement contained propriety applauded neglected use yet.  
+            </span>  
+         </p>
+            
+        </div>
+            <div style="display: flex;height: 300px;background-color: rebeccapurple">
+        <div style="display: flex; background-color:red;flex: 1;justify-content: center;align-items: center;font-weight: bold;font-size: 250%">
+            Hello
+        </div>
+        
+        
+        <div style="display: flex; background-color: blue;flex: 1;justify-content:center;align-items: center;font-size: 250%;font-weight: bold">
+            World
+        </div>
+    </div>
+    
+    <div style="display: flex;border: 3px solid">
+        
+        <div style="background-color: green;height: 300px;display: flex;flex: 0.5;">
+  
+        </div>
+        
+        <div style="background-color: orange;height: 300px;display: flex;flex: 1;justify-content: center;align-items:center;font-weight: bold;font-size: 250%">
+            
+        </div>
+        
+        
+    </div>
+
+    <div class="linear">
+        
+    </div>
+
+    <div style="background-color: aqua;height: 400px;display: flex;justify-content: center;align-items: center"> 
+        <img src="https://picsum.photos/id/140/200/300" alt="">
+    </div>
+   
+</body>
+</html>
