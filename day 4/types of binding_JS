@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alert('hello world')">Click me!</button>
+    <button onclick="func()">Click for function</button>
+    <button onclick="externalfunction()">Click for external</button>
+</body>
+
+<script src="external.js">
+    function func()
+    {
+        alert('This is internal javascript');
+    }
+</script>
+
+</html>
