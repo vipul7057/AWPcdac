@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Write Something</div>
+    <div style="margin-bottom: 5px">
+        <input type="text" id="usercom">
+    </div>
+    <div>
+        <button id="button">ADD COMMENT</button>
+        <button id="like">LIKE</button>
+        <div id="text"></div>
+        <div id="autocommet"></div>
+    </div>
+</body>
+<script>
+    var counter = 1;
+    document.getElementById("button").onclick = function() {
+        let usercomment = document.getElementById("usercom").value;
+        
+        const newdiv = document.createElement("div");
+        newdiv.innerHTML = usercomment + " (comment no):-" + counter;
+        newdiv.style.backgroundColor = "gold";
+        newdiv.style.padding = "20px";
+        newdiv.style.margin = "15px";
+        document.getElementById("text").append(newdiv);
+        counter++;
+    }
+    var likecounter = 1;
+    document.getElementById("like").onclick = function() {
+        document.getElementById("like").innerHTML = 'LIKE ' + likecounter;
+        likecounter++;
+    }
+</script></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
