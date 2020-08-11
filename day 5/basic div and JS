@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex;justify-content: center;align-items: center;height: 100vh;
+       flex-direction: column">
+        <div id="number" style="font-size: 50px"></div>
+        <div>
+
+            <button id="add" style="height: 70px;width: 200px;font-size: 50px">add</button>
+            <button id="sub" style="height: 70px;width: 200px;font-size: 50px">sub</button>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    var addcountre = 1;
+    document.getElementById("add").onclick =function()
+    {
+        document.getElementById("number").innerHTML = addcountre;
+        
+        addcountre++;
+        
+    }
+    
+    document.getElementById("sub").onclick = function()
+    {  
+        addcountre--;
+        document.getElementById("number").innerHTML = 
+            addcountre;
+       
+    }
+    
+
+    
+</script></html>
