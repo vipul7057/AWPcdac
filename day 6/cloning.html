@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Write Something</div>
+    <div style="margin-bottom: 5px">
+        <input type="text" id="usercom">
+    </div>
+    <div>
+        <button id="button">ADD COMMENT</button>
+    </div>
+    <div id="maindiv">
+        <div id="innermain" style="display: flex;
+           justify-content: space-between">
+            <div id="combox">Hello</div>
+            <button>Delete</button>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("button").onclick = function() {
+        let usercomment = document.getElementById("usercom").value;
+        if(usercomment == "")
+            {
+               return;
+            }
+        const newdiv = document.getElementById("innermain").cloneNode(true);
+        newdiv.children[0].innerHTML = usercomment;
+        newdiv.removeAttribute("id");
+        const maindiv = document.getElementById("maindiv");
+        maindiv.appendChild(newdiv);
+    }
+
+</script>
+
+</html>
