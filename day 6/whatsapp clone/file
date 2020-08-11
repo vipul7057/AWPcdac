@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    #msg {
+        height: 50px;
+        width: 88%;
+        border-radius: 30px;
+        background-color: #323739;
+        font-size: 15px;
+        color: white;
+    }
+
+    #rightdiv {
+        background: url("b1.PNG");
+        opacity: 0.8;
+    }
+
+    .name {
+        display: flex;
+        color: white;
+        flex: 1;
+        height: 10vh;
+        background-color: #323739;
+        border-bottom: 0.5px solid black;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .name:hover {
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <div style="height: 100vh;
+ 
+    display: flex;
+    ">
+        <!--       left div-->
+
+        <div style="flex: 1;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;">
+            <div style="flex: 1;
+             background: #2A2F32;
+               display: flex;
+               align-items: center;
+               justify-content: space-between">
+                <div><img src="IMG-2734.PNG" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-left: 20px;">
+                </div>
+                <div><img src="symbol.PNG" alt=""></div>
+            </div>
+
+            <div style="flex: 8;">
+                <!--               search-->
+                <div style="background-color: #131C21;
+               height: 8vh;">
+                    <div style="display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       height: 10vh">
+                        <input style="border-radius: 20px;
+                        background-color: #323739;
+                        display: flex;
+                        flex: 1
+                        ;height: 5vh;color: white;margin-bottom: 15px" type="text" placeholder="Search or start new chat">
+                    </div>
+                </div>
+
+                <div class="name">
+                    <img src="https://i.pinimg.com/originals/05/5b/dc/055bdc52b9c5e6a1444b517cb5e17a9d.jpg" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 1
+                </div>
+                <div class="name">
+                    <img src="https://2.bp.blogspot.com/-3l2ry-aIqhQ/WFkGteQKexI/AAAAAAAAAvs/Zebczh4EacIsoUCcDhjwiWhLY_YMZR00ACLcB/s1600/0d4afaf11d2e936878a6e57c570e83b3__1482228318_182.76.21.156.jpg" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 2
+                </div>
+                <div class="name">
+                    <img src="https://www.setaswall.com/wp-content/uploads/2019/08/Whatsapp-Wallpaper-111.jpg" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 3
+                </div>
+                <div class="name">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlod8U9uGwqud88Uba_4xL6LQ_Neewkd3Sxg&usqp=CAU" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 4
+                </div>
+                <div class="name">
+                    <img src="https://2.bp.blogspot.com/-3l2ry-aIqhQ/WFkGteQKexI/AAAAAAAAAvs/Zebczh4EacIsoUCcDhjwiWhLY_YMZR00ACLcB/s1600/0d4afaf11d2e936878a6e57c570e83b3__1482228318_182.76.21.156.jpg" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 5
+                </div>
+                <div class="name">
+                    <img src="https://www.setaswall.com/wp-content/uploads/2019/08/Whatsapp-Wallpaper-011.jpg" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 6
+                </div>
+                <div class="name">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvUWMNJ0hECsNq-skBlavNS09tWcmJHzMMTg&usqp=CAU" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 7
+                </div>
+                <div class="name">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1S2yV_4B-gYakunOd2WMVYiF8mb7Xml6B9A&usqp=CAU" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 10px;">
+                    GROUP - 8
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--        right div-->
+        <div style="flex: 2;
+            display: flex;
+           flex-direction: column">
+            <div style="flex: 1;
+            background: #2A2F32">
+                <div class="name">
+                    <img src="https://i.pinimg.com/originals/05/5b/dc/055bdc52b9c5e6a1444b517cb5e17a9d.jpg" alt="" style="height: 8vh;
+                 width: 50px;border-radius: 50px;
+                 margin-right: 15px;">
+                    GROUP - 1
+                </div>
+            </div>
+
+            <div id="rightdiv" style="flex: 7;
+               display: flex;
+               font-size: 20px">
+                <div id="msgleft" style="flex: 1;color:white">
+                </div>
+
+                <div id="msgright" style="flex: 1;color: white">
+
+                </div>
+
+            </div>
+
+            <!--            message-->
+            <div style="flex: 1;
+            background-color:#2A2F32 ">
+                <div style="display: flex;
+               justify-content: space-between;
+               align-items:center;height: 70px">
+                    <button id="lsend">LSend</button>
+
+                    <input id="msg" type="text" placeholder="Type a message">
+
+                    <button id="rsend">RSend</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    document.getElementById("lsend").onclick = function() {
+        let usercomment = document.getElementById("msg").value;
+
+        const newdiv = document.createElement("div");
+        newdiv.innerHTML = usercomment;
+        newdiv.style.marginLeft = "5px";
+        document.getElementById("msgleft").append(newdiv);
+    }
+    document.getElementById("rsend").onclick = function() {
+        let usercomment = document.getElementById("msg").value;
+
+        const newdiv = document.createElement("div");
+        newdiv.style.textAlign = "right";
+
+        newdiv.innerHTML = usercomment;
+        newdiv.style.marginRight = "5px";
+        document.getElementById("msgright").append(newdiv);
+    }
+</script></html>
