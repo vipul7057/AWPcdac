@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <title>Array</title>
+</head>
+
+
+<body>
+
+    <div id="demo">
+        This is For Tweets
+    </div>
+    <br>
+    <div id="demo2" style="font-weight: bold">
+        This is array of cities:-
+    </div>
+    <br>
+    <div id="person">
+
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        var myarray = new Array();
+        myarray[0] = "mumbai";
+        myarray[1] = "pune";
+        myarray[2] = "goa";
+        document.getElementById("demo2").innerHTML =
+            document.getElementById("demo2").innerHTML + "<br>" + myarray;
+
+        var length;
+        length = myarray.length;
+
+
+        var tweets = ["hello", "rain"];
+
+        tweets.push("virus");
+        tweets.pop();
+        tweets.push("virus2");
+        var len = tweets.length;
+        tweets.splice(1,0,"INSERT");
+        
+        tweets.unshift("UNSHIFT");//adds at the starts
+        tweets.shift(); // delete first
+        
+        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "<br>" + tweets + "<br>" + "Length of array is " + len;
+
+        var person = [{
+            firstname: "vipul",
+            lastname: "zope",
+            age: 24
+        }, {
+            age: 12
+        }];
+
+        document.getElementById("person").innerHTML = person[0].age + " " + person[0].firstname;
+    </script>
+
+</body></html>
