@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="one">
+    <button id="add">Check</button>
+</body>
+<script>
+    document.getElementById("add").onclick = function() {
+        var val = 19;
+        var campare = document.getElementById("one").value;
+        var intcampre = parseInt(campare);
+        
+        if(intcampre < val)
+            {
+                alert(val - intcampre);
+            }
+        else{
+            alert((intcampre - 19)*3);
+        }
+    }
+
+</script>
+
+</html>
