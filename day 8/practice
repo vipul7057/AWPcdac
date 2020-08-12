@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    
+    </head>
+    
+    <body>
+<!--        <button onclick="alert('hey')">click me!!</button>-->
+        
+        <p id="text2">javascript is.....</p>
+        <button id="mybutton2">click to add the text!</button>
+
+        <p id="text">Money heist!!</p>
+        <button id="mybutton">Change the text!!</button>
+        
+        <p id="emptytext"></p>
+        <button id="emptybutton">add text</button>
+        
+        <h2><p id="styletext">This is some text</p></h2>
+        <button id="font">Click to change design</button> 
+        
+        <a href="http://www.google.com" id="google">Click me!</a>
+        
+        <script type="text/javascript">
+            document.getElementById("mybutton").onclick=function()
+            {
+                document.getElementById("text").innerHTML='Breaking Bad';
+            }
+
+        document.getElementById("mybutton2").onclick=function()
+        {
+            document.getElementById("text2").innerHTML ="i think " + document.getElementById("text2").innerHTML + 'very good'; 
+        }
+        
+        document.getElementById("google").onclick=function()
+        {
+            
+        }
+        document.getElementById("emptybutton").onclick=function()
+        {
+            document.getElementById("emptytext").innerHTML='<h1>Hello vipul!!</h1>';
+        }
+        document.getElementById("font").onclick=function()
+        {
+            document.getElementById("styletext").style.margin="120px";                                                          
+            document.getElementById("styletext").style.fontStyle="italic";                                                          
+            document.getElementById("styletext").style.fontSize = "50px" ;
+        }
+        
+        
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
