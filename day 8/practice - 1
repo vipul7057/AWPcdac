@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="one">
+    <input type="text" id="two">
+    <button id="add">addition</button>
+</body>
+<script>
+    document.getElementById("add").onclick = function() {
+        var one = document.getElementById("one").value;
+        var two = document.getElementById("two").value;
+        if (parseInt(one) == parseInt(two)) {
+            alert(parseInt(one) * 3);
+        } else {
+            alert(parseInt(one) + parseInt(two));
+
+        }
+    }
+</script></html>
