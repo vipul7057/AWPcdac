@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Loops</title>
+    </head>
+
+    
+    <body>
+    
+        <div id="array"></div>
+  
+        <script type="text/javascript">
+       
+            var allarray="";
+            var arr=['hello','world','javascript is fun','it is used for game creation']
+       
+            for(var i = 0; i<arr.length ;  i++)
+                {
+                    allarray = allarray + "<p>" +arr[i] + "</p>";
+                    
+                }
+            document.getElementById("array").innerHTML = allarray;
+            
+    
+    </script>
+        
+    </body>
+</html>
