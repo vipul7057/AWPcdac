@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    #maindonediv {
+        display: none;
+    }
+
+    #mainall {
+        display: none;
+    }
+
+</style>
+
+<body>
+    <div style="display: flex;
+      
+       justify-content: center;
+       align-items: center;height: 100vh">
+
+        <div style="
+            background-color:lightcyan;
+            ">
+            <div>
+                <h2>To Do List</h2>
+                <h4>Active task</h4>
+                <br>
+                <button id="showdone">Done Task</button>
+                <button id="showall">All Tasks</button>
+            </div>
+            <div style="margin-bottom: 20px">
+                <input id="task" type="text" placeholder="Enter Task">
+                <button id="add">Add Task</button>
+            </div>
+
+            <div id="maindiv" style="
+               justify-content: space-between">
+                <div id="innermain" style="display: flex;
+                   justify-content: space-between">
+                    <div>Sample comment </div>
+                    <button id="delete" onclick="deletetask(this)">Delete</button>
+                    <button id="Done" onclick="donetask(this)">Done</button>
+                </div>
+            </div>
+        </div>
+        <div id="maindonediv" style="
+               justify-content: space-between;
+               background-color: aqua">
+            <h2>Task Done List</h2>
+            <button id="closedone" onclick="closedone()">close</button>
+            <div id="innerdone">
+                <div></div>
+            </div>
+        </div>
+
+        <div id="mainall" style="
+               justify-content: space-between;
+               background-color: aqua">
+            <h2>All Task List</h2>
+            <button id="closeall" onclick="closeall()">close</button>
+            <div id="innerall">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("add").onclick = function() {
+        let task = document.getElementById("task");
+        
+        const newdiv = document.getElementById("innermain").cloneNode(true
+        );
+        newdiv.children[0].innerHTML = task.value;
+        document.getElementById("maindiv").append(newdiv);
+        task.value = "";
+        
+        
+
+    }
+
+    function deletetask(currentBtnRef) {
+        currentBtnRef.parentElement.remove();
+    }
+
+    function donetask(currentBtnRef) {
+        const parent = currentBtnRef.parentElement;
+        let donet = parent.children[0].innerHTML;
+
+        const doneclone = document.getElementById("innerdone").cloneNode(true);
+        doneclone.children[0].innerHTML = donet;
+        document.getElementById("maindonediv").append(doneclone);
+
+        currentBtnRef.parentElement.remove();
+
+    }
+    document.getElementById("showdone").onclick = function() {
+        document.getElementById("maindonediv").style.display = "block";
+    }
+    function closedone() {
+        document.getElementById("maindonediv").style.display = "none";
+    }
+    document.getElementById("showall").onclick = function() {
+        document.getElementById("mainall").style.display = "block";
+    }
+    function closeall() {
+        document.getElementById("mainall").style.display = "none";
+    }
+    var element = document.getElementById("add");
+    element.addEventListener("click", function() {
+        let task = document.getElementById("task").value;
+        const newdiv = document.getElementById("innerall").cloneNode(true);
+
+        newdiv.children[0].innerHTML = task;
+        document.getElementById("mainall").append(newdiv);
+    }, false);
+
+</script>
+
+</html>
